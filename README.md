@@ -1,16 +1,21 @@
-## Hi there 👋
+<div align="center">
+  <h1>Hi there, I'm drgnxd 👋</h1>
+</div>
 
-<!--
-**drgnxd/drgnxd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+### 📊 GitHub Stats
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=drgnxd&show_icons=true&theme=tokyonight&count_private=true" alt="Stats" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=drgnxd&layout=compact&theme=tokyonight" alt="Top Langs" />
+</div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🌱 Activity
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=drgnxd&theme=tokyonight" alt="Streak" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/drgnxd/drgnxd/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</div>
