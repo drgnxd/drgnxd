@@ -2,8 +2,9 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # 12時間ごとに実行
-  workflow_dispatch:        # 手動実行ボタンを有効化
+    # UTC 3:00(=JST12:00), UTC 15:00(=JST24:00)
+    - cron: "0 3,15 * * *" 
+  workflow_dispatch:
 
 jobs:
   build:
