@@ -17,5 +17,9 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/drgnxd/drgnxd/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/drgnxd/drgnxd/raw/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/drgnxd/drgnxd/raw/output/github-contribution-grid-snake.svg" />
+    <img alt="Snake animation" src="https://github.com/drgnxd/drgnxd/raw/output/github-contribution-grid-snake.svg" />
+  </picture>
 </div>
