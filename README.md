@@ -8,7 +8,7 @@
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=drgnxd&show_icons=true&theme=tokyonight&count_private=true" alt="Stats" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=drgnxd&layout=compact&theme=tokyonightcache_seconds=14400" alt="Top Langs" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=drgnxd&layout=compact&theme=tokyonight&cache_seconds=14400" alt="Top Langs" />
 </div>
 
 ### 🌱 Activity
