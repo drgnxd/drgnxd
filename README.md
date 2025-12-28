@@ -3,19 +3,12 @@
 </div>
 
 ---
-
-### 📊 GitHub Stats
+### 📊 GitHub Metrics
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=drgnxd&show_icons=true&theme=tokyonight&count_private=true" alt="Stats" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=drgnxd&layout=compact&theme=tokyonight&cache_seconds=14400" alt="Top Langs" />
+  <img src="github-metrics.svg" alt="GitHub Metrics" />
 </div>
 
 ### 🌱 Activity
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=drgnxd&theme=tokyonight" alt="Streak" />
-</div>
-
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/drgnxd/drgnxd/raw/output/github-contribution-grid-snake-dark.svg" />
