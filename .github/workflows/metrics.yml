@@ -1,6 +1,6 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}] # 毎日JST 9:00に更新
+  schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
 jobs:
   github-metrics:
@@ -15,5 +15,19 @@ jobs:
           template: classic
           base: header, community, repositories, metadata
           config_timezone: Asia/Tokyo
-          # ファイルの保存先を指定
           filename: github-metrics.svg
+          
+          # --- グラフィカルプラグインの追加 ---
+          # 1. 3Dコントリビューションカレンダー
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          
+          # 2. 詳細な使用言語チャート
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_indepth: yes
+          
+          # 3. 活動習慣（時間帯・曜日別の統計）
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
