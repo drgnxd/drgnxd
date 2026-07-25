@@ -9,8 +9,8 @@
   
   <br><br>
 
-  <img src="https://github-readme-stats.vercel.app/api?username=drgnxd&show_icons=true&theme=transparent&hide_border=true" height="150" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=drgnxd&layout=compact&theme=transparent&hide_border=true" height="150" alt="languages" />
+  <img src="https://github.com/drgnxd/drgnxd/raw/cards/profile-summary-card-output/transparent/3-stats.svg" height="150" alt="stats" />
+  <img src="https://github.com/drgnxd/drgnxd/raw/cards/profile-summary-card-output/transparent/1-repos-per-language.svg" height="150" alt="languages" />
 
   <br><br>
 
