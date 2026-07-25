@@ -13,20 +13,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate cards (light theme)
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: "cards"
-          THEME: "github"
+      # The action's BRANCH_NAME input only affects a URL string it writes into
+      # its own preview README; the actual `git push` targets whatever branch is
+      # checked out. Switch to the isolated "cards" branch ourselves so main
+      # stays untouched.
+      - name: Switch to cards branch
+        run: |
+          git fetch origin cards:cards || true
+          if git show-ref --verify --quiet refs/heads/cards; then
+            git checkout cards
+          else
+            git checkout --orphan cards
+            git rm -rf --cached . > /dev/null
+            find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+          fi
 
-      - name: Generate cards (dark theme)
+      # THEME must stay a single value: each invocation wipes the whole output
+      # folder before regenerating, so calling this action twice (e.g. once per
+      # theme) deletes the previous call's result instead of accumulating.
+      - name: Generate cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: "cards"
-          THEME: "github_dark"
+          THEME: "transparent"
