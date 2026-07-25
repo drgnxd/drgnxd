@@ -26,7 +26,12 @@ jobs:
             git checkout --orphan cards
             git rm -rf --cached . > /dev/null
             find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+            git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" \
+              commit --allow-empty -m "Initialize cards branch"
           fi
+          # Ensure upstream tracking exists so the action's plain `git push` (no
+          # refspec/flags) succeeds instead of failing with "no upstream branch".
+          git push -u origin cards
 
       # THEME must stay a single value: each invocation wipes the whole output
       # folder before regenerating, so calling this action twice (e.g. once per
